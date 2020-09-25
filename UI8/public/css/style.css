@@ -1,0 +1,2514 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100%;
+    background-color: #775ada;
+}
+
+#wrapper {
+    width: 375px;
+    z-index: 1;
+}
+
+#svg-bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+#top-nav {
+    width: 100%;
+    min-height: 50px;
+}
+
+#fixed-nav {
+    width: 100%;
+    position: fixed;
+    background-color: #775ada;
+    min-height: 50px;
+    z-index: 25;
+}
+
+
+#top-nav-inner {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 15px;
+}
+
+#top-nav-inner h1 {
+    font-size: 1.15rem;
+    color: rgb(38, 180, 38);
+    display: inline-block;
+}
+
+#top-nav-inner h1 i {
+    color: #ccc;
+}
+
+#login{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(38, 180, 38);
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-size: .6rem;
+    border: 1px solid rgb(38, 180, 38);
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 41px;
+    margin-left: 129px;
+}
+
+#login:hover{
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #775ada;
+    transition: all 600ms ease-in-out;
+}
+
+#main-content {
+    width: 100%;
+}
+
+#main-content-inner {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#left-content {
+    margin-top: 30px;
+}
+
+#left-content h1 {
+    color: #fff;
+    font-size: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#info{
+     display: none;
+}
+
+#right-content {
+    width: 100%;
+}
+
+#right-content-inner {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#get-start,
+#top-nav-middle,
+#sign-up{
+    display: none;
+}
+
+#get-started {
+    width: 100%;
+    text-align: center;
+}
+
+#right-content-inner a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#right-content-inner a i{
+    color: rgb(38, 180, 38);
+}
+
+#right-content-inner a:hover {
+    background-color: #f4f4f4;
+    color: rgb(38, 180, 38);
+    transition: all 600ms ease-in-out;
+}
+
+#bottom-content {
+    background-color:#D6CDF3;
+    width: 100%;
+    min-height: 350px;
+    margin-top: 15px;
+    padding-bottom: 70px;
+}
+
+#bottom-content-inner {
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ad9ce8;
+    border-radius: .25rem;
+    margin: 15px 0;
+    width: 100%;
+    height: 200px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.card-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.card-content-icon {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 3px solid rgb(38, 180, 38);
+    margin-bottom: 10px;
+}
+
+.card-content p, .card-content-2 p {
+    color: #fff;
+    font-size: .75rem;
+    line-height: 1.15rem;
+}
+
+.card-content-svg {
+    position: relative;
+    bottom: 6px;
+}
+
+.card-content-svg svg {
+    border-radius: .25rem;
+}
+
+.card-content-svg-2 svg {
+    border-radius: .25rem;
+}
+
+.card-content-2 {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 35px;
+}
+
+#bottom-nav {
+    width: 100%;
+    min-height: 60px;
+    background-color: #f4f4f4;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+#bottom-nav-inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#bottom-nav-inner ul {
+    width: 100%;/
+}
+
+#bottom-nav-inner ul li {
+    padding-top: 10px;
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    min-height: 60px;
+}
+
+#bottom-nav-inner ul li a{
+    text-decoration: none;
+    color: rgb(38, 180, 38);
+}
+
+#bottom-nav ul li i {
+    display: block;
+    margin-bottom: 5px;
+    color: #775ada;
+}
+
+#bottom-nav ul li:hover {
+    background-color: rgb(228, 227, 227);
+    cursor: pointer;
+}
+
+#home {
+    background-color: rgb(228, 227, 227);
+}
+
+@media screen and (min-width: 376px) and (max-width: 400px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 425px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom: 15px;
+    }
+    #login {
+        margin-left: 140px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 450px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom: 20px;
+    }
+    #top-nav-inner a {
+        margin-left: 160px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 500px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    
+    #card-2, #card-4 {
+        margin-bottom: 35px;
+        
+    }
+
+    #login {
+        margin-left: 180px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 550px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    
+    #card-2, #card-4 {
+        margin-bottom: 35px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 600px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    
+    #card-2, #card-4 {
+        margin-bottom: 35px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 220px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 650px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    
+    #card-2, #card-4 {
+        margin-bottom: 35px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 250px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 700px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    .card-content {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-top: 26px;
+    }
+
+    .card-content p{
+        height: 100px;
+    }
+
+    #card-2, #card-4 {
+        margin-bottom: 0;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 300px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        height: 250px;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .65rem;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 250px;
+        height: 225px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 751px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom: 15px;
+    }
+
+    #tlogin {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 350px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .65rem;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 250px;
+        height: 225px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom: 15px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 400px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .65rem;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 250px;
+        height: 225px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 850px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom:20px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 440px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .65rem;
+        margin-top: 15px;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 250px;
+        height: 250px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 900px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom:20px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 470px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .65rem;
+        margin-top: 15px;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 250px;
+        height: 250px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 950px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom:25px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 505px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .75rem;
+        margin-top: 15px;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 300px;
+        height: 300px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1000px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom:27px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: .75rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 60px;
+        margin-left: 550px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .75rem;
+        margin-top: 15px;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 300px;
+        height: 300px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1050px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom:34px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 435px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 75px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .75rem;
+        margin-top: 15px;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 350px;
+        height: 350px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.5rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1100px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        bottom:37px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 470px;
+    }
+    .card{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+    #card-1, #card-3 {
+        margin-right: 10%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .75rem;
+        margin-top: 15px;
+        line-height: .95rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 400px;
+        height: 400px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.5rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1150px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 53px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 520px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.1rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 425px;
+        height: 425px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.5rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1200px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 53px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+    #svg-bg{
+        top: 60px;
+    }
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 60px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.25rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 450px;
+        height: 450px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.5rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #bottom-content {
+        padding-top: 25px;
+    }
+    #top-nav-middle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 125px;
+    }
+    #top-nav-middle li {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+    #top-nav-middle li:hover {
+        color: #f4f4f4;
+        border-bottom: 2px solid rgb(38, 180, 38);
+        cursor: pointer;
+    }
+    #top-nav-middle li:nth-child(1),
+    #top-nav-middle li:nth-child(2),
+    #top-nav-middle li:nth-child(3),
+    #top-nav-middle li:nth-child(4){
+        margin-right: 1rem;
+    }
+    #top-nav-middle li a {
+        text-decoration: none;
+        font-size: .85rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    #home-top {
+        border-bottom: 2px solid rgb(38, 180, 38);
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1150px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 53px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 520px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.1rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 425px;
+        height: 425px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.5rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 46px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+    #svg-bg{
+        top: 100px;
+    }
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 70px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 125px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 2.75rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.25rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 500px;
+        height: 500px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.75rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #bottom-content {
+        padding-top: 25px;
+    }
+    #top-nav-middle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 100px;
+    }
+    #top-nav-middle li {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+    #top-nav-middle li:hover {
+        color: #f4f4f4;
+        border-bottom: 2px solid rgb(38, 180, 38);
+        cursor: pointer;
+    }
+    #top-nav-middle li:nth-child(1),
+    #top-nav-middle li:nth-child(2),
+    #top-nav-middle li:nth-child(3),
+    #top-nav-middle li:nth-child(4){
+        margin-right: 1rem;
+    }
+    #top-nav-middle li a {
+        text-decoration: none;
+        font-size: .95rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    #home-top {
+        border-bottom: 2px solid rgb(38, 180, 38);
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 46px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+    #svg-bg{
+        top: 100px;
+    }
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 105px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 125px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.25rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 550px;
+        height: 550px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.75rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #bottom-content {
+        padding-top: 25px;
+    }
+    #top-nav-middle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 135px;
+    }
+    #top-nav-middle li {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+    #top-nav-middle li:hover {
+        color: #f4f4f4;
+        border-bottom: 2px solid rgb(38, 180, 38);
+        cursor: pointer;
+    }
+    #top-nav-middle li:nth-child(1),
+    #top-nav-middle li:nth-child(2),
+    #top-nav-middle li:nth-child(3),
+    #top-nav-middle li:nth-child(4){
+        margin-right: 1rem;
+    }
+    #top-nav-middle li a {
+        text-decoration: none;
+        font-size: .95rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    #home-top {
+        border-bottom: 2px solid rgb(38, 180, 38);
+    }
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1400px) {
+    #login {
+        margin-left: 150px;
+    }
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 37px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+    #svg-bg{
+        top: 140px;
+    }
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 125px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 125px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.25rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 600px;
+        height: 600px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.75rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #bottom-content {
+        padding-top: 25px;
+    }
+    #top-nav-middle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 180px;
+    }
+    #top-nav-middle li {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+    #top-nav-middle li:hover {
+        color: #f4f4f4;
+        border-bottom: 2px solid rgb(38, 180, 38);
+        cursor: pointer;
+    }
+    #top-nav-middle li:nth-child(1),
+    #top-nav-middle li:nth-child(2),
+    #top-nav-middle li:nth-child(3),
+    #top-nav-middle li:nth-child(4){
+        margin-right: 1rem;
+    }
+    #top-nav-middle li a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    #home-top {
+        border-bottom: 2px solid rgb(38, 180, 38);
+    }
+}
+
+@media screen and (min-width: 1451px) and (max-width: 1500px) {
+    #login {
+        margin-left: 175px;
+    }
+}
+
+
+@media screen and (min-width: 1501px) and (max-width: 1600px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 32px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+    #svg-bg{
+        top: 200px;
+    }
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 190px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.5rem;
+        padding: 15px 25px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 130px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.25rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 650px;
+        height: 650px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.75rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #bottom-content {
+        padding-top: 25px;
+    }
+    #top-nav-middle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 200px;
+    }
+    #top-nav-middle li {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+    #top-nav-middle li:hover {
+        color: #f4f4f4;
+        border-bottom: 2px solid rgb(38, 180, 38);
+        cursor: pointer;
+    }
+    #top-nav-middle li:nth-child(1),
+    #top-nav-middle li:nth-child(2),
+    #top-nav-middle li:nth-child(3),
+    #top-nav-middle li:nth-child(4){
+        margin-right: 1rem;
+    }
+    #top-nav-middle li a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    #home-top {
+        border-bottom: 2px solid rgb(38, 180, 38);
+    }
+}
+
+@media screen and (min-width: 1551px) and (max-width: 1600px) {
+    #login {
+        margin-left: 230px;
+    }
+}
+
+
+@media screen and (min-width: 1601px) {
+    #wrapper {
+        width: 100%;
+    }
+    .card-content-svg {
+        position: relative;
+        top: 22px;
+    }
+    .card-content p {
+        height: 66px;
+    }
+    #svg-bg{
+        top: 250px;
+    }
+    #sign-up {
+        display: inline-block;
+        text-decoration: none;
+        color: #775ada;
+        background-color: #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid #fff;
+        font-weight: 600;
+        vertical-align: top;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    
+    #sign-up:hover{
+        border: 1px solid rgb(38, 180, 38);
+        background-color: rgb(38, 180, 38);
+        color: #fff;
+        transition: all 600ms ease-in-out;
+    }
+
+    #login {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(38, 180, 38);
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: .85rem;
+        border: 1px solid rgb(38, 180, 38);
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        margin-left: 175px;
+    }
+    .card{
+        display: inline-block;
+        width: 23%;
+        vertical-align: top;
+        min-height: 250px;
+    }
+    #card-1, #card-2, #card-3 {
+        margin-right: 2.5%;
+    }
+    #get-started{
+        display: none;
+    }
+
+    #get-start {
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 1.5rem;
+        padding: 15px 25px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #get-start i{
+        color: rgb(38, 180, 38);
+    }
+    
+    #get-start:hover {
+        background-color: #f4f4f4;
+        color: rgb(38, 180, 38);
+        transition: all 600ms ease-in-out;
+    }
+
+    #left-content{
+        display: inline-block;
+        margin-bottom: 150px;
+        margin-top: 130px;
+        width: 50%;
+    }
+
+    #left-content h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    #info {
+        display: inline-block;
+        font-size: .85rem;
+        margin-top: 15px;
+        line-height: 1.25rem;
+        color: #ccc;
+    }
+
+    #right-content {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #right-content svg {
+        width: 700px;
+        height: 700px;
+    }
+
+    #svg-bg{
+        display: block;
+    }
+    #top-nav-inner h1 {
+        font-size: 1.75rem;
+        color: rgb(38, 180, 38);
+        display: inline-block;
+    }
+    #bottom-nav {
+        display: none;
+    }
+    #bottom-content {
+        padding-top: 25px;
+    }
+    #top-nav-middle {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 300px;
+    }
+    #top-nav-middle li {
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+    #top-nav-middle li:hover {
+        color: #f4f4f4;
+        border-bottom: 2px solid rgb(38, 180, 38);
+        cursor: pointer;
+    }
+    #top-nav-middle li:nth-child(1),
+    #top-nav-middle li:nth-child(2),
+    #top-nav-middle li:nth-child(3),
+    #top-nav-middle li:nth-child(4){
+        margin-right: 1rem;
+    }
+    #top-nav-middle li a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    #home-top {
+        border-bottom: 2px solid rgb(38, 180, 38);
+    }
+}
